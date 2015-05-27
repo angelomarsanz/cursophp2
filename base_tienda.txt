@@ -1,0 +1,46 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Servidor: localhost
+-- Tiempo de generación: 27-03-2010 a las 20:18:24
+-- Versión del servidor: 5.0.45
+-- Versión de PHP: 5.2.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Base de datos: `arty0613_sitio`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `Libros`
+-- 
+
+CREATE TABLE `libros` (
+  `IdLibro` varchar(10) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `Autor` varchar(50) NOT NULL,
+  `Cantidad` int(11) NOT NULL,
+  `Precio` double NOT NULL,
+  PRIMARY KEY  (`IdLibro`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Volcar la base de datos para la tabla `Libros`
+-- 
+
+INSERT INTO `libros` (`IdLibro`, `Nombre`, `Autor`, `Cantidad`, `Precio`) VALUES 
+('1', 'El símbolo perdido (Espanol)', 'Dan Brown', 20, 27),
+('10', 'Once minutos', 'Paulo Coelho', 20, 12),
+('11', 'Algebra', 'Baldor', 60, 45),
+('2', 'El código Da Vinci', 'Dan Brown', 15, 15),
+('3', 'El Alquimista', 'Paulo Coelho', 30, 10),
+('4', 'Angeles y demonios', 'Dan Brown', 20, 17),
+('5', 'Veronica decide morir', 'Paulo Coelho', 14, 10),
+('6', 'Preguntale a Alicia', 'Anonimo', 30, 8),
+('7', 'La eleccion', 'Og Mandino', 20, 12),
+('8', 'El vendedor más grande del mundo', 'Og Mandino', 14, 10),
+('9', 'Eclipse', 'Stephanie Meyer', 50, 19);
